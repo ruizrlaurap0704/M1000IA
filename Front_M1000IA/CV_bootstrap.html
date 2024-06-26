@@ -75,10 +75,8 @@
                             const formData = new FormData();
                             formData.append('imagDer', selectedFile);
 
-                            axios.post('http://localhost:8000/predict', formData, {
-                                headers: {
-                                    'Content-Type': 'multipart/form-data'
-                                }
+                            axios.post('http://127.0.0.1:8000/predict', formData, {
+                                
                             })
                                 .then(response => {
                                     console.log('Imagen enviada satisfactoriamente:', response.data);
